@@ -1,0 +1,1064 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage[table,xcdraw]{xcolor}
+
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=white}
+
+\declaretheoremstyle[name=Corollary,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{corollary}
+\tcolorboxenvironment{corollary}{colback=white}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{subtheorem}
+\tcolorboxenvironment{subtheorem}{colback=white}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberwithin=section]{proposition}
+\tcolorboxenvironment{proposition}{colback=white}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=white}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=5.5in,
+    top=1in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% Cover Page and ToC
+% ------------------------------------------------------------------------------
+
+\title{ \normalsize \textsc{}
+		\\ [0cm]
+		\HRule{1.5pt} \\
+		\LARGE \noindent \textbf{\uppercase{Calculus \& analytical geometry (2)\\ (MATH 132)-Worksheet\#00}
+		\HRule{2.0pt} \\ [0.6cm] \LARGE{Cairo University \\ Faculty Of Science} \vspace*{1\baselineskip}}
+        \\
+        
+		}
+        
+\date{$1^{\text{st}}$week (February 8, 2025 - February 13, 2025) Spring 2025}
+
+\author{ \noindent \textbf{Written \& Reviewed by} \\ 3ndlyb Alabyd} \\ 
+
+\maketitle
+
+
+\section{Answers for Q1}
+\subsection{}
+To find the most general antiderivative of \( f(x) = x^2 - 3x + 2 \), we integrate term by term:
+
+\[
+F(x) = \frac{1}{3}x^3 - \frac{3}{2}x^2 + 2x + C
+\]
+
+Here, \( C \) is the constant of integration. To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = x^2 - 3x + 2
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+the antiderivative for \( f(x) = 2x^3 - \frac{2}{3}x^2 + 5x \):
+
+\[
+F(x) = \frac{1}{2}x^4 - \frac{2}{9}x^3 + \frac{5}{2}x^2 + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = 2x^3 - \frac{2}{3}x^2 + 5x
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+the antiderivative for \( f(x) = 6x^5 - 8x^4 - 9x^2 \):
+
+\[
+F(x) = \frac{6}{6}x^6 - \frac{8}{5}x^5 - \frac{9}{3}x^3 + C
+\]
+\[
+F(x) = x^6 - \frac{8}{5}x^5 - 3x^3 + C
+\]
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = 6x^5 - 8x^4 - x^2
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( g(t) = \frac{1 + t + t^2}{\sqrt{t}} \), first rewrite the function using exponent rules:
+
+\[
+g(t) = t^{-1/2} + t^{1/2} + t^{3/2}
+\]
+
+Now integrate term by term:
+
+\[
+G(t) = 2t^{1/2} + \frac{2}{3}t^{3/2} + \frac{2}{5}t^{5/2} + C
+\]
+
+To verify, differentiate \( G(t) \):
+
+\[
+G'(t) = t^{-1/2} + t^{1/2} + t^{3/2}
+\]
+
+This matches the original function \( g(t) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( r(\theta) = \sec(\theta)\tan(\theta) - 2e^\theta \), integrate term by term:
+
+\[
+R(\theta) = \sec(\theta) - 2e^\theta + C
+\]
+
+To verify, differentiate \( R(\theta) \):
+
+\[
+R'(\theta) = \sec(\theta)\tan(\theta) - 2e^\theta
+\]
+
+This matches the original function \( r(\theta) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(x) = x(12x + 8) \), first expand the function:
+
+\[
+f(x) = 12x^2 + 8x
+\]
+
+Now integrate term by term:
+
+\[
+F(x) = 4x^3 + 4x^2 + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = 12x^2 + 8x
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(x) = (x - 5)^2 \), first expand the function:
+
+\[
+f(x) = x^2 - 10x + 25
+\]
+
+Now integrate term by term:
+
+\[
+F(x) = \frac{1}{3}x^3 - 5x^2 + 25x + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = x^2 - 10x + 25
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( h(\theta) = 2\sin(\theta) - \sec^2(\theta) \), integrate term by term:
+
+\[
+H(\theta) = -2\cos(\theta) - \tan(\theta) + C
+\]
+
+To verify, differentiate \( H(\theta) \):
+
+\[
+H'(\theta) = 2\sin(\theta) - \sec^2(\theta)
+\]
+
+This matches the original function \( h(\theta) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( g(v) = 2\cos(v) - \frac{3}{\sqrt{1 - v^2}} \), integrate term by term:
+
+\[
+G(v) = 2\sin(v) - 3\overset{\footnotemark }{\arcsin(v)} + C
+\]
+\footnotetext{An arctrig function is the inverse of a trigonometric function.\\ It is also denoted as \(\text{trig}^{-1}\), e.g., \(\sin^{-1}(x) = \arcsin(x)\).}
+To verify, differentiate \( G(v) \):
+
+\[
+G'(v) = 2\cos(v) - \frac{3}{\sqrt{1 - v^2}}
+\]
+
+This matches the original function \( g(v) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(x) = 7x^{2/5} + 8x^{-4/5} \), integrate term by term:
+
+\[
+F(x) = 5x^{7/5} + 40x^{1/5} + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = 7x^{2/5} + 8x^{-4/5}
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(x) = \sin(2x + 5) + e^{-3x} \), integrate term by term:
+
+\[
+F(x) = -\frac{1}{2}\cos(2x + 5) - \frac{1}{3}e^{-3x} + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = \sin(2x + 5) + e^{-3x}
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(x) = \frac{1}{\sinh(x) + \cosh(x)} \), we use the identity:
+
+\[
+\sinh(x) + \cosh(x) = e^x
+\]
+
+Thus, the function simplifies to:
+
+\[
+f(x) = \frac{1}{e^x} = e^{-x}
+\]
+
+Now integrate \( e^{-x} \):
+
+\[
+F(x) = -e^{-x} + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = e^{-x}
+\]
+
+This matches the simplified form of the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(x) = x^{3.4} - 2x^{\sqrt{2} - 1} \), integrate term by term:
+
+\[
+F(x) = \frac{1}{4.4}x^{4.4} - \frac{2}{\sqrt{2}}x^{\sqrt{2}} + C
+\]
+
+Simplify the constants:
+
+\[
+F(x) = \frac{5}{22}x^{4.4} - \sqrt{2}x^{\sqrt{2}} + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = x^{3.4} - 2x^{\sqrt{2} - 1}
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(x) = 2^x + 4\sinh(x) \), integrate term by term:
+
+\[
+F(x) = \frac{2^x}{\ln 2} + 4\cosh(x) + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = \frac{d}{dx} \left( \frac{2^x}{\ln 2} \right) + \frac{d}{dx} (4\cosh(x))
+\]
+
+\[
+F'(x) = \frac{2^x \ln 2}{\ln 2} + 4\sinh(x)
+\]
+
+\[
+F'(x) = 2^x + 4\sinh(x)
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(x) = 1 + 2\sin(x) + \frac{3}{\sqrt{x}} \), integrate term by term:
+
+\[
+F(x) = x - 2\cos(x) + 6x^{\frac{1}{2}} + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = 1 + 2\sin(x) + \frac{3}{\sqrt{x}}
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(x) = \sqrt{2} \), integrate term by term:
+
+\[
+F(x) = \sqrt{2}x + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = \sqrt{2}
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(x) = e^2 \), integrate term by term:
+
+\[
+F(x) = e^2 x + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = e^2
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(x) = 3\sqrt{x} - 2\sqrt[3]{x} \), rewrite the terms using exponents:
+
+\[
+f(x) = 3x^{\frac{1}{2}} - 2x^{\frac{1}{3}}
+\]
+
+Now integrate term by term:
+
+\[
+F(x) = \frac{3}{\frac{3}{2}} x^{\frac{3}{2}} - \frac{2}{\frac{4}{3}} x^{\frac{4}{3}} + C
+\]
+
+Simplify the constants:
+
+\[
+F(x) = 2x^{\frac{3}{2}} - \frac{6}{4} x^{\frac{4}{3}} + C
+\]
+
+\[
+F(x) = 2x^{\frac{3}{2}} - \frac{3}{2}x^{\frac{4}{3}} + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = 2 \cdot \frac{3}{2} x^{\frac{1}{2}} - \frac{3}{2} \cdot \frac{4}{3} x^{\frac{1}{3}}
+\]
+
+\[
+F'(x) = 3x^{\frac{1}{2}} - 2x^{\frac{1}{3}}
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(x) = \sqrt[3]{x^2} + x\sqrt{x} \), rewrite the terms using exponents:
+
+\[
+f(x) = x^{\frac{2}{3}} + x^{\frac{3}{2}}
+\]
+
+Now integrate term by term:
+
+\[
+F(x) = \frac{x^{\frac{2}{3}+1}}{\frac{2}{3}+1} + \frac{x^{\frac{3}{2}+1}}{\frac{3}{2}+1} + C
+\]
+
+Simplify the exponents and constants:
+
+\[
+F(x) = \frac{x^{\frac{5}{3}}}{\frac{5}{3}} + \frac{x^{\frac{5}{2}}}{\frac{5}{2}} + C
+\]
+
+\[
+F(x) = \frac{3}{5} x^{\frac{5}{3}} + \frac{2}{5} x^{\frac{5}{2}} + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = \frac{3}{5} \cdot \frac{5}{3} x^{\frac{2}{3}} + \frac{2}{5} \cdot \frac{5}{2} x^{\frac{3}{2}}
+\]
+
+\[
+F'(x) = x^{\frac{2}{3}} + x^{\frac{3}{2}}
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(x) = \frac{2x^4 + 4x^3 - x}{x^3} \) for \( x > 0 \), first simplify the expression by dividing each term by \( x^3 \):
+
+\[
+f(x) = \frac{2x^4}{x^3} + \frac{4x^3}{x^3} - \frac{x}{x^3}
+\]
+
+\[
+f(x) = 2x + 4 - \frac{1}{x^2}
+\]
+
+Now, integrate term by term:
+
+
+\[
+F(x) = x^2 + 4x + \frac{1}{x} + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = 2x + 4 - \frac{1}{x^2}
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(t) = \frac{3t^4 - t^3 + 6t^2}{t^4} \), first simplify the expression by dividing each term by \( t^4 \):
+
+\[
+f(t) = \frac{3t^4}{t^4} - \frac{t^3}{t^4} + \frac{6t^2}{t^4}
+\]
+
+\[
+f(t) = 3 - \frac{1}{t} + \frac{6}{t^2}
+\]
+
+Now, integrate term by term:
+
+\[
+F(t) = 3t - \ln|t| - \frac{6}{t} + C
+\]
+
+To verify, differentiate \( F(t) \):
+
+\[
+F'(t) = 3 - \frac{1}{t} + \frac{6}{t^2}
+\]
+
+This matches the original function \( f(t) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(x) = \frac{1}{5} - \frac{2}{x} \), integrate term by term:
+
+\[
+F(x) = \frac{1}{5}x - 2\ln|x| + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = \frac{1}{5} - \frac{2}{x}
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+To find the most general antiderivative of \( f(x) = 2\sin(x)\cos(x) \), use the trigonometric identity:
+
+\[
+2\sin(x)\cos(x) = \sin(2x)
+\]
+
+Now, integrate \( \sin(2x) \):
+
+\[
+F(x) = -\frac{1}{2}\cos(2x) + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = \sin(2x)
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\subsection{}
+Sure! To find the most general antiderivative of \( f(x) = \tan^2(x) \), we'll start by deriving the identity for \( \tan^2(x) \) from the Pythagorean identity \( \sin^2(x) + \cos^2(x) = 1 \).
+
+We know that:
+
+\[
+\tan^2(x) = \frac{\sin^2(x)}{\cos^2(x)}
+\]
+
+Now, we can use the identity \( \sin^2(x) + \cos^2(x) = 1 \), which leads to:
+
+\[
+\sin^2(x) = 1 - \cos^2(x)
+\]
+
+So,
+
+\[
+\tan^2(x) = \frac{1 - \cos^2(x)}{\cos^2(x)} = \sec^2(x) - 1
+\]
+
+Now, we can proceed with the antiderivative of \( f(x) = \sec^2(x) - 1 \):
+
+\[
+F(x) = \tan(x) - x + C
+\]
+
+To verify, differentiate \( F(x) \):
+
+\[
+F'(x) = \sec^2(x) - 1
+\]
+
+This matches the original function \( f(x) \), so the antiderivative is correct.
+\section{Answer for Q2}
+
+Given the values:
+\[
+x_1 = 0.5, \quad x_2 = -1, \quad x_3 = 2, \quad x_4 = 1.5
+\]
+
+We need to compute the sum:
+\[
+\sum_{k=1}^4 (x_k - 2)^2
+\]
+
+\noindent Step 1: Calculate each term \((x_k - 2)^2\) individually:
+
+\begin{align*}
+(x_1 - 2)^2 &= (0.5 - 2)^2 = (-1.5)^2 = 2.25 \\
+(x_2 - 2)^2 &= (-1 - 2)^2 = (-3)^2 = 9 \\
+(x_3 - 2)^2 &= (2 - 2)^2 = 0^2 = 0 \\
+(x_4 - 2)^2 &= (1.5 - 2)^2 = (-0.5)^2 = 0.25
+\end{align*}
+
+\noindent Step 2: Sum all the calculated terms:
+\[
+\sum_{k=1}^4 (x_k - 2)^2 = 2.25 + 9 + 0 + 0.25 = 11.5
+\]
+
+\noindent \textbf{Final Answer:}
+\[
+\boxed{11.5}
+\]
+\section{Answers for Q3}
+\subsection*{(a)}
+We are asked to find the value of the following sum:
+
+\[
+S = \sum_{k=0}^3 (k^2 + 7)
+\]
+
+We can split this into two separate sums:
+
+\[
+S = \sum_{k=0}^3 k^2 + \sum_{k=0}^3 7
+\]
+
+\textbf{Step 1: Sum of Squares \( \sum_{k=0}^3 k^2 \)}
+
+The formula for the sum of squares of the first \( n \) integers is:
+
+\[
+\sum_{k=0}^n k^2 = \frac{n(n+1)(2n+1)}{6}
+\]
+
+Substituting \( n = 3 \):
+
+\[
+\sum_{k=0}^3 k^2 = \frac{3(3+1)(2(3)+1)}{6} = \frac{3(4)(7)}{6} = \frac{84}{6} = 14
+\]
+
+Thus, the sum of squares is \( 14 \).
+
+\textbf{Step 2: Sum of Constants \( \sum_{k=0}^3 7 \)}
+
+The formula for the sum of a constant \( c \) over \( n+1 \) terms is:
+
+\[
+\sum_{k=0}^n c = c \cdot (n + 1)
+\]
+
+Here, \( c = 7 \) and the sum is from \( k = 0 \) to \( k = 3 \), so there are \( 3 + 1 = 4 \) terms. Using the formula:
+
+\[
+\sum_{k=0}^3 7 = 7 \cdot (3 + 1) = 7 \cdot 4 = 28
+\]
+
+Thus, the sum of constants is \( 28 \).
+
+\textbf{Step 3: Combine the Two Sums}
+
+Now we combine the two sums:
+
+\[
+S = 14 + 28 = 42
+\]
+
+Thus, the value of the sum is:
+
+\[
+\boxed{42}
+\]
+\subsection*{(b)}
+
+Evaluate the sum:
+\[
+\sum_{k=1}^5 (k^2 - 1)(k - 2).
+\]
+\HRule{0.5pt}
+\subsubsection*{Step 1: Expand \((k^2 - 1)(k - 2)\)}
+First, expand the expression:
+\[
+(k^2 - 1)(k - 2) = k^2(k - 2) - 1(k - 2) = k^3 - 2k^2 - k + 2.
+\]
+Thus, the sum becomes:
+\[
+\sum_{k=1}^5 (k^2 - 1)(k - 2) = \sum_{k=1}^5 (k^3 - 2k^2 - k + 2).
+\]
+
+\subsubsection*{Step 2: Break into Individual Sums}
+Split the sum into four separate sums:
+\[
+\sum_{k=1}^5 (k^3 - 2k^2 - k + 2) = \sum_{k=1}^5 k^3 - 2 \sum_{k=1}^5 k^2 - \sum_{k=1}^5 k + \sum_{k=1}^5 2.
+\]
+
+\subsubsection*{Step 3: Compute Each Sum}
+Compute each of the four sums individually:
+
+1. \(\sum_{k=1}^5 k^3\):
+   \[
+   1^3 + 2^3 + 3^3 + 4^3 + 5^3 = 1 + 8 + 27 + 64 + 125 = 225.
+   \]
+
+2. \(\sum_{k=1}^5 k^2\):
+   \[
+   1^2 + 2^2 + 3^2 + 4^2 + 5^2 = 1 + 4 + 9 + 16 + 25 = 55.
+   \]
+   Thus, \(-2 \sum_{k=1}^5 k^2 = -2 \cdot 55 = -110\).
+
+3. \(\sum_{k=1}^5 k\):
+   \[
+   1 + 2 + 3 + 4 + 5 = 15.
+   \]
+   Thus, \(-\sum_{k=1}^5 k = -15\).
+
+4. \(\sum_{k=1}^5 2\):
+   \[
+   2 + 2 + 2 + 2 + 2 = 10.
+   \]
+
+\subsubsection*{Step 4: Combine the Results}
+Add the results of the four sums:
+\[
+225 - 110 - 15 + 10 = 110.
+\]
+
+\subsubsection*{Final Answer}
+\[
+\boxed{110}
+\]
+\subsection*{(c)}
+Evaluate the sum:
+\[
+\sum_{r=1}^{20} (r^3 + 1).
+\]
+\HRule{0.5pt}
+\subsubsection*{Step 1: Break into Individual Sums}
+The sum can be split into two separate sums:
+\[
+\sum_{r=1}^{20} (r^3 + 1) = \sum_{r=1}^{20} r^3 + \sum_{r=1}^{20} 1.
+\]
+
+\subsubsection*{Step 2: Compute \(\sum_{r=1}^{20} r^3\)}
+The formula for the sum of cubes is:
+\[
+\sum_{r=1}^n r^3 = \left(\frac{n(n+1)}{2}\right)^2.
+\]
+For \(n = 20\):
+\[
+\sum_{r=1}^{20} r^3 = \left(\frac{20 \cdot 21}{2}\right)^2 = (210)^2 = 44100.
+\]
+
+\subsubsection*{Step 3: Compute \(\sum_{r=1}^{20} 1\)}
+The sum of \(1\) repeated \(20\) times is:
+\[
+\sum_{r=1}^{20} 1 = 20.
+\]
+
+\subsubsection*{Step 4: Combine the Results}
+Add the two sums together:
+\[
+\sum_{r=1}^{20} (r^3 + 1) = 44100 + 20 = 44120.
+\]
+
+\subsubsection*{Final Answer}
+\[
+\boxed{44120}
+\]
+\section{Answers for Q4}
+\subsubsection*{(a)}
+Evaluate the sum:
+\[
+\sum_{k=1}^{n} (3k - 2).
+\]
+\HRule{0.5pt}
+\subsubsection*{Step 1: Break into Individual Sums}
+The sum can be split into two separate sums:
+\[
+\sum_{k=1}^{n} (3k - 2) = 3 \sum_{k=1}^{n} k - 2 \sum_{k=1}^{n} 1.
+\]
+
+\subsubsection*{Step 2: Compute \(\sum_{k=1}^{n} k\)}
+The formula for the sum of the first \(n\) natural numbers is:
+\[
+\sum_{k=1}^{n} k = \frac{n(n+1)}{2}.
+\]
+
+\subsubsection*{Step 3: Compute \(\sum_{k=1}^{n} 1\)}
+The sum of \(1\) repeated \(n\) times is:
+\[
+\sum_{k=1}^{n} 1 = n.
+\]
+
+\subsubsection*{Step 4: Substitute and Simplify}
+Substitute the results from Steps 2 and 3 into the expression:
+\[
+\sum_{k=1}^{n} (3k - 2) = 3 \cdot \frac{n(n+1)}{2} - 2 \cdot n.
+\]
+Simplify the expression:
+\[
+\sum_{k=1}^{n} (3k - 2) = \frac{3n(n+1)}{2} - 2n.
+\]
+Combine the terms into a single fraction:
+\[
+\sum_{k=1}^{n} (3k - 2) = \frac{3n(n+1) - 4n}{2}.
+\]
+Expand and simplify the numerator:
+\[
+3n(n+1) - 4n = 3n^2 + 3n - 4n = 3n^2 - n.
+\]
+Thus, the final simplified form is:
+\[
+\sum_{k=1}^{n} (3k - 2) = \frac{3n^2 - n}{2}.
+\]
+
+\subsubsection*{Final Answer}
+\[
+\boxed{\frac{3n^2 - n}{2}}
+\]
+\subsection*{(b)}
+
+We are asked to find the value of the following sum:
+
+\[
+S = \sum_{j=2}^n (j^2 + j)
+\]
+
+We can split this into two separate sums:
+
+\[
+S = \sum_{j=2}^n j^2 + \sum_{j=2}^n j
+\]
+
+\textbf{Step 1: Sum of Squares \( \sum_{j=2}^n j^2 \)}
+
+The formula for the sum of squares from \(1\) to \(n\) is:
+
+\[
+\sum_{j=1}^n j^2 = \frac{n(n+1)(2n+1)}{6}
+\]
+
+To get the sum from \(j = 2\) to \(j = n\), we subtract the first term \(1^2\) from the sum:
+
+\[
+\sum_{j=2}^n j^2 = \sum_{j=1}^n j^2 - 1^2
+\]
+
+Substituting the formula for \( \sum_{j=1}^n j^2 \):
+
+\[
+\sum_{j=2}^n j^2 = \frac{n(n+1)(2n+1)}{6} - 1
+\]
+
+\textbf{Step 2: Sum of Integers \( \sum_{j=2}^n j \)}
+
+The formula for the sum of integers from \(1\) to \(n\) is:
+
+\[
+\sum_{j=1}^n j = \frac{n(n+1)}{2}
+\]
+
+To get the sum from \(j = 2\) to \(j = n\), we subtract the first term \(1\) from the sum:
+
+\[
+\sum_{j=2}^n j = \sum_{j=1}^n j - 1
+\]
+
+Substituting the formula for \( \sum_{j=1}^n j \):
+
+\[
+\sum_{j=2}^n j = \frac{n(n+1)}{2} - 1
+\]
+
+\textbf{Step 3: Combine the Two Sums}
+
+Now, we combine the two sums:
+
+\[
+S = \left( \frac{n(n+1)(2n+1)}{6} - 1 \right) + \left( \frac{n(n+1)}{2} - 1 \right)
+\]
+
+We first combine the constants:
+
+\[
+S = \left( \frac{n(n+1)(2n+1)}{6} \right) + \left( \frac{n(n+1)}{2} \right) - 2
+\]
+
+Now, we find a common denominator. The least common denominator between 6 and 2 is 6. We rewrite the second term:
+
+\[
+\frac{n(n+1)}{2} = \frac{3n(n+1)}{6}
+\]
+
+Substituting this into the expression:
+
+\[
+S = \frac{n(n+1)(2n+1)}{6} + \frac{3n(n+1)}{6} - 2
+\]
+
+Now, combine the fractions:
+
+\[
+S = \frac{n(n+1)(2n+1) + 3n(n+1)}{6} - 2
+\]
+
+Factor out \(n(n+1)\) from the numerator:
+
+\[
+S = \frac{n(n+1) \left( (2n+1) + 3 \right)}{6} - 2
+\]
+
+Simplify inside the parentheses:
+
+\[
+S = \frac{n(n+1)(2n+4)}{6} - 2
+\]
+
+Factor out 2 from \( (2n+4) \):
+
+\[
+S = \frac{n(n+1) \cdot 2( n+2)}{6} - 2
+\]
+
+Simplify the factor of 2:
+
+\[
+S = \frac{2n(n+1)(n+2)}{6} - 2
+\]
+
+Now, simplify the fraction by dividing 2 by 6:
+
+\[
+S = \frac{n(n+1)(n+2)}{3} - 2
+\]
+
+\textbf{Final Answer:}
+
+Thus, the simplified expression for the sum is:
+
+\[
+S = \frac{n(n+1)(n+2)}{3} - 2
+\]
+\subsection*{(c)}
+We are tasked with evaluating the sum:
+\[
+\sum_{k=1}^n (k^2 - 1)(k + 1).
+\]
+
+\subsubsection*{Step 1: Simplify the Expression}
+First, expand \((k^2 - 1)(k + 1)\):
+\[
+(k^2 - 1)(k + 1) = k^2(k + 1) - 1(k + 1) = k^3 + k^2 - k - 1.
+\]
+Thus, the sum becomes:
+\[
+\sum_{k=1}^n (k^2 - 1)(k + 1) = \sum_{k=1}^n (k^3 + k^2 - k - 1).
+\]
+
+\subsubsection*{Step 2: Break into Individual Sums}
+Split the sum into four separate sums:
+\[
+\sum_{k=1}^n (k^3 + k^2 - k - 1) = \sum_{k=1}^n k^3 + \sum_{k=1}^n k^2 - \sum_{k=1}^n k - \sum_{k=1}^n 1.
+\]
+
+\subsubsection*{Step 3: Use Known Summation Formulas}
+Using the following formulas:
+\[
+\sum_{k=1}^n k^3 = \left(\frac{n(n+1)}{2}\right)^2, \quad
+\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}, \quad
+\sum_{k=1}^n k = \frac{n(n+1)}{2}, \quad
+\sum_{k=1}^n 1 = n,
+\]
+we substitute into the expression:
+\[
+\sum_{k=1}^n (k^3 + k^2 - k - 1) = \left(\frac{n(n+1)}{2}\right)^2 + \frac{n(n+1)(2n+1)}{6} - \frac{n(n+1)}{2} - n.
+\]
+
+\subsubsection*{Step 4: Simplify the Expression}
+To simplify, we first rewrite all terms with a common denominator. The least common, multiple, denominator (LCD) for \(4\), \(6\), \(2\), and \(1\) is \(12\). Rewrite each term with denominator \(12\):
+
+1. \(\left(\frac{n(n+1)}{2}\right)^2 = \frac{n^2(n+1)^2}{4}\) becomes:
+   \[
+   \frac{n^2(n+1)^2}{4} = \frac{3n^2(n+1)^2}{12}.
+   \]
+
+2. \(\frac{n(n+1)(2n+1)}{6}\) becomes:
+   \[
+   \frac{n(n+1)(2n+1)}{6} = \frac{2n(n+1)(2n+1)}{12}.
+   \]
+
+3. \(\frac{n(n+1)}{2}\) becomes:
+   \[
+   \frac{n(n+1)}{2} = \frac{6n(n+1)}{12}.
+   \]
+
+4. \(-n\) becomes:
+   \[
+   -n = \frac{-12n}{12}.
+   \]
+
+Now, combine all terms into a single fraction:
+\[
+\frac{3n^2(n+1)^2 + 2n(n+1)(2n+1) - 6n(n+1) - 12n}{12}.
+\]
+
+\subsubsection*{Step 5: Expand and Simplify the Numerator}
+Expand each term in the numerator:
+
+1. Expand \(3n^2(n+1)^2\):
+   \[
+   3n^2(n+1)^2 = 3n^2(n^2 + 2n + 1) = 3n^4 + 6n^3 + 3n^2.
+   \]
+
+2. Expand \(2n(n+1)(2n+1)\):
+   \[
+   2n(n+1)(2n+1) = 2n(2n^2 + 3n + 1) = 4n^3 + 6n^2 + 2n.
+   \]
+
+3. Expand \(-6n(n+1)\):
+   \[
+   -6n(n+1) = -6n^2 - 6n.
+   \]
+
+4. The last term is \(-12n\).
+
+Now, combine all the expanded terms:
+\[
+3n^4 + 6n^3 + 3n^2 + 4n^3 + 6n^2 + 2n - 6n^2 - 6n - 12n.
+\]
+
+Simplify by combining like terms:
+\begin{enumerate}
+    \item \(3n^4\) (no other \(n^4\) terms),
+    \item \(6n^3 + 4n^3 = 10n^3\),
+    \item \(3n^2 + 6n^2 - 6n^2 = 3n^2\),
+    \item \(2n - 6n - 12n = -16n\).
+\end{enumerate}
+
+
+Thus, the numerator simplifies to:
+\[
+3n^4 + 10n^3 + 3n^2 - 16n.
+\]
+
+\subsubsection*{Step 6: Write the Final Simplified Form}
+The final simplified form of the sum is:
+\[
+\boxed{\frac{3n^4 + 10n^3 + 3n^2 - 16n}{12}}.
+\]
+\section{Answer for Q5}
+Given the following information:
+\[
+\sum_{j=1}^{10} x_j^2 = 15, \quad \sum_{j=1}^{10} y_j^2 = 26, \quad \sum_{j=1}^{10} (x_j + y_j)^2 = 73,
+\]
+find the value of \(\sum_{j=1}^{10} x_j y_j\).\\
+
+\HRule{0.5pt} 
+\subsubsection*{Step 1: Expand \(\sum_{j=1}^{10} (x_j + y_j)^2\)}
+Expand the square inside the summation:
+\[
+(x_j + y_j)^2 = x_j^2 + 2x_j y_j + y_j^2.
+\]
+Thus, the sum becomes:
+\[
+\sum_{j=1}^{10} (x_j + y_j)^2 = \sum_{j=1}^{10} x_j^2 + 2 \sum_{j=1}^{10} x_j y_j + \sum_{j=1}^{10} y_j^2.
+\]
+
+\subsubsection*{Step 2: Substitute the Given Values}
+Substitute the known values into the equation:
+\[
+73 = 15 + 2 \sum_{j=1}^{10} x_j y_j + 26.
+\]
+
+\subsubsection*{Step 3: Simplify the Equation}
+Combine the constants on the right-hand side:
+\[
+73 = 41 + 2 \sum_{j=1}^{10} x_j y_j.
+\]
+
+Subtract \(41\) from both sides:
+\[
+73 - 41 = 2 \sum_{j=1}^{10} x_j y_j.
+\]
+
+Simplify:
+\[
+32 = 2 \sum_{j=1}^{10} x_j y_j.
+\]
+
+\subsubsection*{Step 4: Solve for \(\sum_{j=1}^{10} x_j y_j\)}
+Divide both sides by \(2\):
+\[
+\sum_{j=1}^{10} x_j y_j = \frac{32}{2} = 16.
+\]
+
+\section*{Final Answer}
+\[
+\boxed{16}
+\]
+
+\end{document}
