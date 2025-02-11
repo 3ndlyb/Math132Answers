@@ -1,6 +1,6 @@
 
 
-# Math132 Course Materials
+# Math132 Course Answers
 
 This repository contains the course materials for **Math132**, including problem sheets and their corresponding answers in PDF and LaTeX formats.
 
