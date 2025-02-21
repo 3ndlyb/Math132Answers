@@ -65,4 +65,4 @@ This repository is licensed under the [MIT License](LICENSE). Feel free to use, 
 
 ## Contact
 
-For any questions or feedback, please contact me in discord at ```3ndlybalabyd```.
+For any questions or feedback, please contact me via discord at ```3ndlybalabyd```.
